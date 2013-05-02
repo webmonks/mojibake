@@ -17,7 +17,7 @@ t.specify do |h|
   h.extra_deps     += [ [ 'json',     '~> 1.6.1' ] ]
   h.extra_dev_deps += [ [ 'minitest', '~> 2.3'   ] ]
 
-  h.url = 'http://github.com/dekellum/mojibake'
+  h.url = 'http://github.com/maciejkowalski/mojibake'
 end
 
 # Version/date consistency checks:
