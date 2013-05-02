@@ -2,6 +2,7 @@
 
 $LOAD_PATH << './lib'
 
+gem 'rjack-tarpit', '~> 2.0'
 require 'rubygems'
 require 'rjack-tarpit/spec'
 require 'mojibake/base'
