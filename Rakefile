@@ -3,22 +3,7 @@
 $LOAD_PATH << './lib'
 
 require 'rubygems'
-gem     'rjack-tarpit', '~> 1.4'
-require 'rjack-tarpit'
-
 require 'mojibake/base'
-
-t = RJack::TarPit.new( 'mojibake', MojiBake::VERSION )
-
-t.specify do |h|
-  h.developer( 'David Kellum', 'dek-oss@gravitext.com' )
-
-  h.testlib = :minitest
-  h.extra_deps     += [ [ 'json',     '~> 1.6.1' ] ]
-  h.extra_dev_deps += [ [ 'minitest', '~> 2.3'   ] ]
-
-  h.url = 'http://github.com/maciejkowalski/mojibake'
-end
 
 # Version/date consistency checks:
 
