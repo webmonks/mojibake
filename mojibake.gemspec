@@ -1,10 +1,14 @@
-gem 'rjack-tarpit', '~> 2.0'
+# -*- encoding: utf-8 -*-
+
+$LOAD_PATH << './lib'
+
+require 'rubygems'
 require 'rjack-tarpit/spec'
+require 'mojibake/base'
 
 RJack::TarPit.specify do |s|
-  require 'mojibake/base'
 
-  s.version = Mojibake::VERSION
+  s.version = MojiBake::VERSION
 
   s.add_developer 'David Kellum', 'dek-oss@gravitext.com'
   s.add_developer 'Maciej Kowalski', 'maciej33kowalski@gmail.com'

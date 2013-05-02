@@ -1,4 +1,6 @@
 source "https://rubygems.org"
-
-# Specify your gem's dependencies in gemtest.gemspec
 gemspec
+
+gem 'rjack-tarpit', '~> 2.0'
+gem 'json', '~> 1.6.1'
+gem 'minitest', '~> 2.3'
