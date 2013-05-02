@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 = MojiBake
 
-* http://github.com/dekellum/mojibake
+* http://github.com/webmonks/mojibake
 
 == Description
 
@@ -18,8 +18,9 @@ Windows-1252 is in the wild, should also benefit.
 Mojibake mappings generation requires the String encoding support in
 ruby 1.9 as provided by:
 
-*  ruby 1.9.2+ (tested 1.9.2p290, Linux)
+* ruby 1.9.2+ (tested 1.9.2p290, Linux)
 * jruby 1.6.5+ (tested 1.6.5, Linux)
+* ruby 2.0.0 (tested 2.0.0p0, Linux)
 
 Recovery of text with default settings is supported by using the
 pre-generated table.json when in ruby 1.8 mode.
@@ -46,7 +47,7 @@ Recover from a text file:
 
 == License
 
-Copyright (c) 2011 David Kellum
+Copyright (c) 2013 David Kellum, Maciej Kowalski
 
 Licensed under the Apache License, Version 2.0 (the "License"); you
 may not use this file except in compliance with the License.  You
