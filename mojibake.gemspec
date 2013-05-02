@@ -14,6 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "mojibake"
   gem.require_paths = ["lib"]
   gem.version       = MojiBake::VERSION
-  gem.add_dependency                  'json', '~> 1.6.1'
-  gem.add_dependency                  'minitest', '~> 2.3'
+  gem.add_dependency                  'json'
+  gem.add_dependency                  'minitest'
 end
