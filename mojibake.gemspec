@@ -1,21 +1,19 @@
 # -*- encoding: utf-8 -*-
 
-$LOAD_PATH << './lib'
+require File.expand_path('../lib/mojibake/base', __FILE__)
 
-gem 'rjack-tarpit', '~> 2.0'
-require 'rubygems'
-require 'rjack-tarpit/spec'
-require 'mojibake/base'
+Gem::Specification.new do |gem|
+  gem.authors       = ["David Kellum", "Maciej Kowalski"]
+  gem.email         = ["dek-oss@gravitext.com", "maciej33kowalski@gmail.com"]
+  gem.description   = gem.summary = "Simple fix for mojibake in Ruby"
+  gem.license       = "Apache License, Version 2.0"
 
-RJack::TarPit.specify do |s|
-
-  s.version = MojiBake::VERSION
-
-  s.add_developer 'David Kellum', 'dek-oss@gravitext.com'
-  s.add_developer 'Maciej Kowalski', 'maciej33kowalski@gmail.com'
-
-  s.maven_strategy = :no_assembly
-
-  s.depend 'json', '~> 1.6.1'
-  s.depend 'minitest', '~> 2.3'
+  gem.executables   = ['mojibake']
+  gem.files         = `git ls-files `.split("\n")
+  gem.test_files    = `git ls-files -- test/*`.split("\n")
+  gem.name          = "mojibake"
+  gem.require_paths = ["lib"]
+  gem.version       = MojiBake::VERSION
+  gem.add_dependency                  'json', '~> 1.6.1'
+  gem.add_dependency                  'minitest', '~> 2.3'
 end
